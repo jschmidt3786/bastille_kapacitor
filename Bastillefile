@@ -1,0 +1,7 @@
+# Bastille Jail Template for kapacitor
+PKG kapacitor
+CP usr /
+# TODO: get cert, enable https
+SYSRC kapacitord_enable=YES
+SERVICE kapacitord start
+RDR tcp 9092 9092
